@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 55px;
+    letter-spacing: -0.012em;
+    color: #ffffff;
+    margin-bottom: -5px;
+}
+
+h2 {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    color: #333333;
+    margin-bottom: 17px;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.fundo {
+    background-color: #E5E5E5;
+    position: relative;
+    width: 450px;
+}
+
+.topo {
+    background-color: #CF2B2B;
+    width: 450px;
+    height: 92px;
+    padding: 8px 0 0px 21px;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.conteudo {
+    margin-top: 123px;
+}
+
+.cardapio {
+    margin: 27px 0 16px 19px;
+}
+
+.cardapio > div {
+    background-color: #ffffff;
+    width: 172px;
+    height: 216px;
+    border-radius: 9px;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+}
+
+.informacoes {
+    height: 216px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.informacoes img {
+    width: 144px;
+    height: 87px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.fechar-pedido {
+    background-color: #ffffff;
+    width: 450px;
+    height: 92px;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+}
+
+@media (max-width: 450px) {
+    .topo .fechar-pedido .fundo {
+        width: 100%;
+    }
+}
