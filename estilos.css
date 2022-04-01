@@ -35,6 +35,42 @@ h3 {
     color: #FFFFFF;
 }
 
+h4 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+
+h5 {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #A6A6A6;
+}
+
+h6 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #ffffff;
+}
+
+button {
+    width: 364px;
+    height: 61px;
+    color: #CBCBCB;
+    border-radius: 50px;
+    border: none;
+}
+
+.preco  {
+    font-weight: 400;
+    color: #000000;
+}
+
 .fundo {
     background-color: #E5E5E5;
     position: relative;
@@ -53,6 +89,7 @@ h3 {
 
 .conteudo {
     margin-top: 123px;
+    margin-bottom: 108px;
 }
 
 .cardapio {
@@ -60,15 +97,25 @@ h3 {
 }
 
 .cardapio > div {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.item {
     background-color: #ffffff;
-    width: 172px;
+    padding: 0 14px;
     height: 216px;
     border-radius: 9px;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
 }
 
 .informacoes {
-    height: 216px;
+    width: 144px;
+    height: 86%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -76,9 +123,8 @@ h3 {
 
 .informacoes img {
     width: 144px;
-    height: 87px;
-    display: flex;
-    margin: 0 auto;
+    height: auto;
+    object-fit: cover;
 }
 
 .fechar-pedido {
@@ -88,10 +134,18 @@ h3 {
     position: fixed;
     z-index: 1;
     bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desabilitado {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 @media (max-width: 450px) {
-    .topo .fechar-pedido .fundo {
+    .topo .fechar-pedido .fundo button{
         width: 100%;
     }
 }
