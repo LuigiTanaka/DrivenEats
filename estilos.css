@@ -61,9 +61,14 @@ h6 {
 button {
     width: 364px;
     height: 61px;
-    color: #CBCBCB;
+    background-color: #CBCBCB;
     border-radius: 50px;
     border: none;
+}
+
+ion-icon {
+    color: #32B72F;
+    font-size: 20px;
 }
 
 .preco  {
@@ -74,12 +79,13 @@ button {
 .fundo {
     background-color: #E5E5E5;
     position: relative;
-    width: 450px;
+    width: 100%;
+    height: 100%;
 }
 
 .topo {
     background-color: #CF2B2B;
-    width: 450px;
+    width: 100%;
     height: 92px;
     padding: 8px 0 0px 21px;
     position: fixed;
@@ -113,12 +119,26 @@ button {
     margin-right: 16px;
 }
 
+.borda-verde {
+    border: 5px solid #32B72F;
+    padding: 0 9px;
+}
+
+.esconder {
+    display: none;
+}
+
 .informacoes {
     width: 144px;
-    height: 86%;
+    height: 186px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.informacoes div {
+    display: flex;
+    justify-content: space-between;
 }
 
 .informacoes img {
@@ -129,7 +149,7 @@ button {
 
 .fechar-pedido {
     background-color: #ffffff;
-    width: 450px;
+    width: 100%;
     height: 92px;
     position: fixed;
     z-index: 1;
@@ -140,8 +160,11 @@ button {
 }
 
 .desabilitado {
-    opacity: 0.6;
     cursor: not-allowed;
+}
+
+.fundo-verde {
+    background-color: #32B72F;
 }
 
 @media (max-width: 450px) {
