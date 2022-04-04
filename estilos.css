@@ -68,7 +68,7 @@ button {
 
 ion-icon {
     color: #32B72F;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .preco  {
@@ -128,6 +128,10 @@ ion-icon {
     display: none;
 }
 
+.mostrar {
+    display: inline;
+}
+
 .informacoes {
     width: 144px;
     height: 186px;
@@ -143,8 +147,9 @@ ion-icon {
 
 .informacoes img {
     width: 144px;
-    height: auto;
+    height: 87px;
     object-fit: cover;
+    border-radius: 9px;
 }
 
 .fechar-pedido {
@@ -167,8 +172,11 @@ ion-icon {
     background-color: #32B72F;
 }
 
-@media (max-width: 450px) {
-    .topo .fechar-pedido .fundo button{
-        width: 100%;
-    }
+.botao-finalizar {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #ffffff;
 }
