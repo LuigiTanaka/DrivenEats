@@ -8,6 +8,14 @@ body {
     justify-content: center;
 }
 
+span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-right: 5px;
+}
+
 h1 {
     font-family: 'Righteous', cursive;
     font-size: 44px;
@@ -64,16 +72,12 @@ button {
     background-color: #CBCBCB;
     border-radius: 50px;
     border: none;
+    padding: 0 70px;
 }
 
 ion-icon {
     color: #32B72F;
     font-size: 19px;
-}
-
-.preco  {
-    font-weight: 400;
-    color: #000000;
 }
 
 .fundo {

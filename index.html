@@ -24,16 +24,21 @@
         </div>
 
         <div class="conteudo">
+
+            <!-- inicio pratos -->
             <div class="cardapio">
                 <h2>Primeiro, seu prato</h2>
                 <div class="pratos">
                     <div class="item" onclick="selecionarPrato(this)">
                         <div class="informacoes">
                             <img src="images/frango_yin_yang 1.png" />
-                            <h4>Frango Yin Yang</h4>
+                            <h4 class="nome-prato">Frango Yin Yang</h4>
                             <h5>Um pouco de batata, um pouco de salada</h5>
                             <div>
-                                <h4 class="preco">R$ 24,90</h4>
+                                <div>
+                                    <span>R$</span>
+                                    <span class="preco">24,90</span>
+                                </div>
                                 <ion-icon name="checkmark-circle" class="esconder icone"></ion-icon>
                             </div>
                         </div>  
@@ -41,10 +46,13 @@
                     <div class="item" onclick="selecionarPrato(this)">
                         <div class="informacoes">
                             <img src="images/pizza.jpeg" />
-                            <h4>Pizza da casa</h4>
+                            <h4 class="nome-prato">Pizza da casa</h4>
                             <h5>Deliciosa pizza de peperoni com ovo</h5>
                             <div>
-                                <h4 class="preco">R$ 59,90</h4>
+                                <div>
+                                    <span>R$</span>
+                                    <span class="preco">59,90</span>
+                                </div>
                                 <ion-icon name="checkmark-circle" class="esconder icone"></ion-icon>
                             </div>
                         </div>
@@ -52,10 +60,13 @@
                     <div class="item" onclick="selecionarPrato(this)">
                         <div class="informacoes">
                             <img src="images/burguer.jpeg" />
-                            <h4>Hamburguer</h4>
+                            <h4 class="nome-prato">Hamburguer</h4>
                             <h5> Burguer de 200g com salada e carne louca</h5>
                             <div>
-                                <h4 class="preco">R$ 44,90</h4>
+                                <div>
+                                    <span>R$</span>
+                                    <span class="preco">44,90</span>
+                                </div>
                                 <ion-icon name="checkmark-circle" class="esconder icone"></ion-icon>
                             </div>
                         </div>
@@ -63,27 +74,35 @@
                     <div class="item" onclick="selecionarPrato(this)">
                         <div class="informacoes">
                             <img src="images/batata.jpeg" />
-                            <h4>Batata frita</h4>
+                            <h4 class="nome-prato">Batata frita</h4>
                             <h5>Batata no cone com cheddar e bacon</h5>
                             <div>
-                                <h4 class="preco">R$ 14,90</h4>
+                                <div>
+                                    <span>R$</span>
+                                    <span class="preco">14,90</span>
+                                </div>
                                 <ion-icon name="checkmark-circle" class="esconder icone"></ion-icon>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- fim pratos -->
 
+            <!-- inicio bebidas -->
             <div class="cardapio">
                 <h2>Agora, sua bebida</h2>
                 <div class="bebidas">
                     <div class="item" onclick="selecionarBebida(this)">
                         <div class="informacoes">
                             <img src="images/coca-cola.png" />
-                            <h4>Coca-cola</h4>
+                            <h4 class="nome-bebida">Coca-cola</h4>
                             <h5>Lata 350ml</h5>
                             <div>
-                                <h4 class="preco">R$ 4,90</h4>
+                                <div>
+                                    <span>R$</span>
+                                    <span class="preco">4,90</span>
+                                </div>
                                 <ion-icon name="checkmark-circle" class="esconder icone"></ion-icon>
                             </div>
                         </div>
@@ -91,10 +110,13 @@
                     <div class="item" onclick="selecionarBebida(this)">
                         <div class="informacoes">
                             <img src="images/agua.jpg" />
-                            <h4>Água com gás</h4>
+                            <h4 class="nome-bebida">Água com gás</h4>
                             <h5>Água mineral com gás 500ml</h5>
                             <div>
-                                <h4 class="preco">R$ 14,90</h4>
+                                <div>
+                                    <span>R$</span>
+                                    <span class="preco">14,90</span>
+                                </div>
                                 <ion-icon name="checkmark-circle" class="esconder icone"></ion-icon>
                             </div>
                         </div>
@@ -102,10 +124,13 @@
                     <div class="item" onclick="selecionarBebida(this)">
                         <div class="informacoes">
                             <img src="images/caipirinha.jpg" />
-                            <h4>Caipirinha</h4>
+                            <h4 class="nome-bebida">Caipirinha</h4>
                             <h5>Caipirinha de limão, kiwi ou morango</h5>
                             <div>
-                                <h4 class="preco">R$ 9,90</h4>
+                                <div>
+                                    <span>R$</span>
+                                    <span class="preco">9,90</span>
+                                </div>
                                 <ion-icon name="checkmark-circle" class="esconder icone"></ion-icon>
                             </div>
                         </div>
@@ -113,27 +138,35 @@
                     <div class="item" onclick="selecionarBebida(this)">
                         <div class="informacoes">
                             <img src="images/sucos.jpg" />
-                            <h4>Sucos naturais</h4>
+                            <h4 class="nome-bebida">Sucos naturais</h4>
                             <h5>350ml de laranja, limão ou maracujá</h5>
                             <div>
-                                <h4 class="preco">R$ 7,90</h4>
+                                <div>
+                                    <span>R$</span>
+                                    <span class="preco">7,90</span>
+                                </div>
                                 <ion-icon name="checkmark-circle" class="esconder icone"></ion-icon>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- fim bibidas -->
 
+            <!-- inicio sobremesas -->
             <div class="cardapio">
                 <h2>Por fim, sua sobremesa</h2>
                 <div class="sobremesas">
                     <div class="item" onclick="selecionarSobremesa(this)">
                         <div class="informacoes">
                             <img src="images/bolo.jpeg" />
-                            <h4>Bolo de ninho</h4>
+                            <h4 class="nome-sobremesa">Bolo de ninho</h4>
                             <h5>Bolo de leite ninho com morango</h5>
                             <div>
-                                <h4 class="preco">R$ 19,90</h4>
+                                <div>
+                                    <span>R$</span>
+                                    <span class="preco">19,90</span>
+                                </div>
                                 <ion-icon name="checkmark-circle" class="esconder icone"></ion-icon>
                             </div>
                         </div>
@@ -141,10 +174,13 @@
                     <div class="item" onclick="selecionarSobremesa(this)">
                         <div class="informacoes">
                             <img src="images/torta.png" />
-                            <h4>Torta de limão</h4>
+                            <h4 class="nome-sobremesa">Torta de limão</h4>
                             <h5>Pedaço de uma incrível torta de limão</h5>
                             <div>
-                                <h4 class="preco">R$ 14,90</h4>
+                                <div>
+                                    <span>R$</span>
+                                    <span class="preco">14,90</span>
+                                </div>
                                 <ion-icon name="checkmark-circle" class="esconder icone"></ion-icon>
                             </div>
                         </div>
@@ -152,10 +188,13 @@
                     <div class="item" onclick="selecionarSobremesa(this)">
                         <div class="informacoes">
                             <img src="images/milkshake.jpeg" />
-                            <h4>Milkshake</h4>
+                            <h4 class="nome-sobremesa">Milkshake</h4>
                             <h5>Milkshake de chocolate e cookies</h5>
                             <div>
-                                <h4 class="preco">R$ 19,90</h4>
+                                <div>
+                                    <span>R$</span>
+                                    <span class="preco">19,90</span>
+                                </div>
                                 <ion-icon name="checkmark-circle" class="esconder icone"></ion-icon>
                             </div>
                         </div>
@@ -163,23 +202,29 @@
                     <div class="item" onclick="selecionarSobremesa(this)">
                         <div class="informacoes">
                             <img src="images/pudim.png" />
-                            <h4>Pudim</h4>
+                            <h4 class="nome-sobremesa">Pudim</h4>
                             <h5>Apenas pudim</h5>
                             <div>
-                                <h4 class="preco">R$ 7,90</h4>
+                                <div>
+                                    <span>R$</span>
+                                    <span class="preco">7,90</span>
+                                </div>
                                 <ion-icon name="checkmark-circle" class="esconder icone"></ion-icon>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- fim sobremesas -->
+
         </div>
 
         <div class="fechar-pedido">
-            <button class="desabilitado botao-finalizar">
+            <button class="desabilitado botao-finalizar" onclick="finalizarPedido()">
                 <h6>Selecione os 3 itens para fechar o pedido</h6>
             </button>
         </div>
+        
     </div>
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
